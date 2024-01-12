@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmi i kercimit te gjallesave ne lumenj</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+
+<body>
+    <h3 class="text-center mt-5 mb-5">Algoritmi i kërcimit të gjallesave në lumenj</h3>
+
+    <form id="form" method="get" action="#">
+        <div class="row ">
+            <div class="stone-selection ml-5">
+                <label for="stone-options">Selekto Shembujt:</label>
+                <select id="stone-options" name="stone-options">
+                    <option value="stones1">Shembulli 1</option>
+                    <option value="stones2">Shembulli 2</option>
+                    <option value="stones3">Shembulli 3</option>
+                </select>
+            </div>
+
+            <div class="stone-selection ml-5">
+                <label for="stone-options">Selekto mbushjen:</label>
+                <select id="fill-options" name="fill-options">
+                    <option value="stone">Gurë</option>
+                    <option value="box">Kuti</option>
+                </select>
+            </div>
+
+            <div class="stone-selection ml-5">
+                <label for="stone-options">Selekto Gjallesën:</label>
+                <select id="img-options" name="img-options">
+                    <option value="frog">Bretkosa</option>
+                    <option value="rabbit">Lepuri</option>
+                </select>
+            </div>
+
+            <div class="stone-selection ml-5">
+                <label for="stone-options">Selekto Ngjyrën:</label>
+                <select id="color-options" name="color-options">
+                    <option value="green">Gjelber</option>
+                    <option value="pink">Pembe</option>
+                    <option value="brown">Kafe</option>
+                </select>
+            </div>
+
+            <div class="stone-selection ml-5">
+                <label for="stone-options">Mbush hapësirën:</label>
+                <select id="space-options" name="space-options">
+                    <option value="leaf">Gjethe</option>
+                    <option value="bright-color">Ngjyrë e çelët</option>
+                    <option value="darker-color">Njgjyrë e mbyllët</option>
+                </select>
+            </div>
+
+            <div class="ml-5">
+                <button type="submit" class="btn btn-primary "
+                    style="width:150px;height:30px;text-align: center; line-height:10px">Ndrysho Pamjen</button>
+            </div>
+
+        </div>
+    </form>
+
+
+    <div class="scroll-container mt-4 align-center">
+        <div id="river" class="river" style="margin-left:4px">
+            
+        </div>
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close" onclick="document.getElementById('popup').style.display = 'none'">&times;</span>
+                <h1>Problemi u zgjidh!</h1>
+                <h4>Gjallesa arriti të kaloj lumin duke arritur deri tek guri i fundit</h4>
+                <img clas="success-image" src="images/success.png" alt="Success Image">
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="./js/index.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+</body>
+
+
+</html>
