@@ -1,7 +1,6 @@
 import { canCross } from './algorithm.js';
 import { createRiverWithStones } from './river.js';
-import { getSelectedStones } from './params.js';
-import { updateViewBasedOnFormParams } from './params.js';
+import { getSelectedStones,updateViewBasedOnFormParams,showInfo} from './params.js';
 
 
 let currentJumpIndex = 0;
@@ -104,6 +103,7 @@ document.addEventListener('keydown', (event) => {
 });
 
 document.addEventListener('wheel', (event) => {
+    console.log('Wheel event triggered');
     if (event.deltaY > 0 && currentJumpIndex < position.length) {
         jumpFrog();
     }
@@ -117,7 +117,7 @@ window.onload = function () {
     document.getElementById('img-options').value = urlParams.get('img-options');
     document.getElementById('color-options').value = urlParams.get('color-options');
     document.getElementById('space-options').value = urlParams.get('space-options');
-
+showInfo();
     updateViewBasedOnFormParams();
 
 }

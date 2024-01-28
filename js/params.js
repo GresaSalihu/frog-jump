@@ -16,6 +16,11 @@ export function getSelectedStones(optionValue) {
     }
 }
 
+export function showInfo() {
+    var infoPopup = document.getElementById('info');
+    infoPopup.style.display = 'block';
+}
+
 export function updateViewBasedOnFormParams() {
 
     const fillOptions = urlParams.get('fill-options');

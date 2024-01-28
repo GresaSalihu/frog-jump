@@ -45,8 +45,8 @@
             <div class="stone-selection ml-5">
                 <label for="stone-options">Selekto Ngjyrën:</label>
                 <select id="color-options" name="color-options">
-                    <option value="green">Gjelber</option>
-                    <option value="pink">Pembe</option>
+                    <option value="green">Gjelbër</option>
+                    <option value="pink">Rozë</option>
                     <option value="brown">Kafe</option>
                 </select>
             </div>
@@ -78,7 +78,18 @@
                 <span class="close" onclick="document.getElementById('popup').style.display = 'none'">&times;</span>
                 <h1>Problemi u zgjidh!</h1>
                 <h4>Gjallesa arriti të kaloj lumin duke arritur deri tek guri i fundit</h4>
-                <img clas="success-image" src="images/success.png" alt="Success Image">
+                <img class="success-image" src="images/success.png" alt="Success Image">
+            </div>
+        </div>
+
+   
+        <div id="info" class="popup" style="height:100%;">
+            <div class="popup-content">
+                <span class="close" onclick="document.getElementById('info').style.display = 'none'">&times;</span>
+                <h1 class="text-primary">Informata rreth përdorimit të veglës</h1>
+                <h5 class="text-secondary mt-5">Përmes plotësimit të formës ju do  zgjedhni/ndryshoni elementet e veglës</h5>
+                <h5 class="text-danger mt-3"> Gjallesa do të bëjë kërcimin e ardhshëm sa herë që ju e shtypni 'key down' </h5>
+                <img class="success-image" src="images/key_down.png" alt="Success Image" style="width:100px;height:80px;" >
             </div>
         </div>
 
